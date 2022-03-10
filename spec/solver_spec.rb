@@ -58,5 +58,9 @@ describe Solver do
     it 'should return fizzbuzz if divisible by 3 and 5' do
       expect(Solver.new.fizzbuzz(15)).to eq('fizzbuzz')
     end
+
+    it 'should return number as string if not divisible by 3 or 5' do
+      expect(Solver.new.fizzbuzz(7)).to eq('7')
+    end
   end
 end
