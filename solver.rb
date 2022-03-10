@@ -9,7 +9,9 @@ class Solver
     return number * factorial(number - 1)
   end
 
-  def reverse(word); end
+  def reverse(word)
+    return word.reverse!
+  end
 
   def fizzbuzz(number); end
 end
