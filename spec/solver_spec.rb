@@ -18,6 +18,15 @@ describe Solver do
     it "should return the number's factorial" do
       expect(Solver.new.factorial(5)).to eq(120)
     end
+  end
 
+  describe '#reverse' do
+    it 'should have one argument' do
+      expect{ Solver.new.reverse }.to raise_error ArgumentError
+    end
+
+    it 'should return reverse string' do
+      expect(Solver.new.reverse('hello')).to eq('olleh')
+    end
   end
 end
