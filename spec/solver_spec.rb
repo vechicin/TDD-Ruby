@@ -29,4 +29,18 @@ describe Solver do
       expect(Solver.new.reverse('hello')).to eq('olleh')
     end
   end
+
+  describe "#fizzbuzz" do
+    it 'should return fizz if divisible by 3' do
+      expect(Solver.new.fizzbuzz(3)).to eq('fizz')
+    end
+
+    it 'should return buzz if divisible by 5' do
+      expect(Solver.new.fizzbuzz(5)).to eq('buzz')
+    end
+
+    it 'should return fizzbuzz if divisible by 3 and 5' do
+      expect(Solver.new.fizzbuzz(15)).to eq('fizzbuzz')
+    end
+  end
 end
