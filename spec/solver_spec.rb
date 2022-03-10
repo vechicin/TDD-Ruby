@@ -3,16 +3,16 @@ require_relative '../solver'
 
 describe Solver do
   describe '#factorial' do
-  it 'should have one argument' do
-    expect{ Solver.new.factorial }.to raise_error ArgumentError
-  end
+    it 'should have one argument' do
+      expect { Solver.new.factorial }.to raise_error ArgumentError
+    end
 
     it 'should raise an error if number is negative' do
-      expect{ Solver.new.factorial(-1) }.to raise_error('Number must be >= 0')
+      expect { Solver.new.factorial(-1) }.to raise_error('Number must be >= 0')
     end
 
     it 'should raise an error if number is not an integer' do
-      expect{ Solver.new.factorial(10.4) }.to raise_error('Number must be an integer')
+      expect { Solver.new.factorial(10.4) }.to raise_error('Number must be an integer')
     end
 
     it 'should return 1 if number is 0' do
@@ -26,11 +26,11 @@ describe Solver do
 
   describe '#reverse' do
     it 'should have one argument' do
-      expect{ Solver.new.reverse }.to raise_error ArgumentError
+      expect { Solver.new.reverse }.to raise_error ArgumentError
     end
 
     it 'should raise an error if word is not a string' do
-      expect{ Solver.new.reverse(25) }.to raise_error('Word must be a string')
+      expect { Solver.new.reverse(25) }.to raise_error('Word must be a string')
     end
 
     it 'should return reverse string' do
@@ -38,13 +38,13 @@ describe Solver do
     end
   end
 
-  describe "#fizzbuzz" do
+  describe '#fizzbuzz' do
     it 'should have one argument' do
-      expect{ Solver.new.fizzbuzz }.to raise_error ArgumentError
+      expect { Solver.new.fizzbuzz }.to raise_error ArgumentError
     end
 
     it 'should raise an error if input is not an integer' do
-      expect{ Solver.new.fizzbuzz(10.4) }.to raise_error('Input must be an integer')
+      expect { Solver.new.fizzbuzz(10.4) }.to raise_error('Input must be an integer')
     end
 
     it 'should return fizz if divisible by 3' do
