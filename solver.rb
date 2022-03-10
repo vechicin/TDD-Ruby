@@ -1,5 +1,7 @@
 class Solver
-  def factorial(number); end
+  def factorial(number)
+
+  end
 
   def reverse(word); end
 
