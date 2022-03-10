@@ -14,5 +14,11 @@ class Solver
     return word.reverse!
   end
 
-  def fizzbuzz(number); end
+  def fizzbuzz(number)
+    raise 'Input must be an integer' unless number.is_a? Integer
+    string = ''
+    string = 'fizz' if number % 3 == 0
+    string += 'buzz' if number % 5 == 0
+    return string
+  end
 end
